@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    
+    <div class="flex justify-center items-center h-screen bg-red-300 ">
+       
+        <div id="form" class="block bg-slate-50 p-12 rounded-xl shadow-lg shadow-slate-300 w-90">
+            <form action="/post/form" method="POST">
+                <h2 class="text-purple-600 text-3xl font-bold text-center">SignUp</h2>
+                <div id="fullname" class="flex flex-row">
+                    <div id="firstname" class="w-full mr-1">
+                        <label for="name" class="text-sm"> Name*</label>
+                        <input type="text" name="name" id="name"
+                            class="h-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm"required>
+                    </div>
+                    
+                </div>
+                <label for="email" class="text-sm">Email*</label><br>
+                <input type="email" name="email" id="email"
+                    class="h-8 w-full rounded-lg border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" required>
+                <label for="number" class="text-sm">number</label><br>
+                <input type="number" name="number" id="number"
+                    class="h-8 w-full rounded-md border border-slate-300 text-sm pl-2 bg-transparent outline-blue-600 shadow-sm" required>
+                
+                <input type="submit" name="" id="signUp"
+                    class="bg-blue-700 w-full h-10 cursor-pointer text-white rounded-md hover:bg-emerald-400 hover:outline outline-2 outline-blue-600 outline-offset-2 text-sm"><br>
+                <p class="text-xs my-2">Already have account?<a href="signin.html" class="text-blue-600">Login</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
